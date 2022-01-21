@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        h1{
+            text-align: center;
+            margin-bottom: 0;
+        }
+      table{
+          border: none !important;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+        table, th, td {
+           border: 1px solid black;
+           border-collapse: collapse;
+           padding: 25px;
+            }
+            .section {
+    background-color: white;
+    border: 2px solid rgb(36, 33, 33);
+    margin: 10px 250px;
+    width: 50%;
+    font-family: sans-serif;
+
+}
+.edit{
+    position: relative;
+    margin-left: 10px;
+    padding: 10px;
+}
+.heading{
+    background-color: red;
+    color: white;
+    margin: 5px;
+    text-align : center;
+}
+.heading h2 {
+    margin: 10px 10px;
+}
+.edit input{
+    border: 0 none #ccc;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-family: 'Vujahday Script', cursive;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.text-box > input {
+    width: 45%;
+}
+.text-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+ .name-design p {
+    display: inline;
+    /* justify-content: space-evenly; */
+}
+.fname {
+    position: relative;
+    left: 17px;
+}
+.lname {
+    position: relative;
+    left: 195px;
+}
+.address-field{
+    margin-left: 15px;
+}
+.address-field > input {
+    width: 96%;
+}
+.place {
+    display: flex;
+    margin-left: 15px;
+}
+.place input {
+    width: 78%;
+}
+.place p {
+    margin-top: 0;
+}
+
+.subscribe-class{
+    display: flex;
+    font-weight: bolder;
+}
+.send-info{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.default-form {
+            border: 2px solid black;
+            width: 50%;
+            background-image: linear-gradient(to right top, #b7cd4d, #eda21a, #ff6244, #ff008e, #d71de9);
+        }
+        .default-form > div {
+            padding: 10px;
+            margin-left: 15px;
+        }
+        .submit{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Programming Language</li>
+        <ul>
+            <li>Javascript</li>
+               <ol style="list-style-type: lower-alpha;">
+                   <li>Angular</li>
+                   <li>React</li>
+                   <li>vue.js</li>
+               </ol>
+            <li>Python</li>
+               <ol style="list-style-type: lower-alpha;">
+                   <li>Django framework</li>
+                   <li>Flask framework</li>
+               </ol>
+            <li>Java</li>
+               <ol style="list-style-type: lower-alpha;">
+                   <li>Spring</li>
+                   <li>Maven</li>
+                   <li>Hibernate</li>
+               </ol>
+        </ul>
+        <li>Database</li>
+          <ul>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Cansandra</li>
+          </ul>
+    </ul>
+    <hr>
+    <a style="font-size: 25px;" href="https://www.google.com" target="_blank">Google</a>
+    <hr>
+    <table>
+        <h1 >Health Chart </h1> 
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td style="text-align: center;" colspan="2">Fasting value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+         <td>Pre-Diabetes</td>
+         <td>101</td>
+         <td>126</td>
+         <td>140 to 200</td>
+     </tr>
+     <tr>
+         <td>Diabetes</td>
+         <td>More than 126</td>
+         <td>N/A</td>
+         <td>More than 200</td>
+     </tr>
+     </table>
+     <hr>
+     <h3> <strong>HTML & CSS is awesome</strong> </h3>
+     <hr>
+     <form action="">
+        <table style="border: 1px solid black; text-align: center; ">
+            <tr>
+                <th>Contact us</th> 
+            </tr>
+            <td>
+                <form action="">
+                    <label for="">First-Name : </label>
+                    <input type="text" name="fname" required="required"><br>
+                    <label for="">Last-name : </label>
+                    <input type="text" name="lname" required="required"><br>
+                    <label for="">Mobile number : </label>
+                    <input type="number" name="mobile" required="required"><br>
+                    <label for="">E-mail : </label>
+                    <input type="email" name="mail" required="required"><br>
+                    <label for="">message</label>
+                    <textarea row="5" column="5" name="message" required="required"> </textarea><br>
+                    <input type="submit">
+                </form>
+
+            </td>
+        </table>
+    </form>
+    <hr>
+    <label for="type">Employee type : </label>
+    <input type="radio" name="group" value = "business"> <label for="business">Business</label>
+     <input type="radio" name="group"value="salaried"><label for="salaried">Salaried</label>
+     <hr>
+     <section class="section">
+        <form class="edit" action="">
+          <div class="heading">
+            <h2>Yes! I want to subscribe Mag-O-Zine</h2>
+          </div>
+          <div class="text-box">
+            <input type="text" name="fname" value="Joe"/> 
+            <input type="text" name="lname" value="Schmegeggie"/>
+          </div>
+          
+          <div class="name-design">
+            <p class="fname">First Name</p>
+            <p class="lname">Last Name</p>
+          </div>
+  
+          <div class="address-field">
+            <input type="text" name="address" value="1001 Washington street"/>
+            <p style="margin-top: 0px;">Address</p>
+          </div>
+          <div class="place">
+            <div class="city">
+              <input type="text" value="AnyCity">
+              <p>city</p>
+            </div>
+            <div class="state">
+              <input type="text" value="CA">
+              <p>state</p>
+            </div>
+            <div class="zip">
+              <input type="text" value="9999">
+              <p>Zip</p>
+            </div>
+          </div>
+          
+  
+          
+          <div class="subscribe-class">
+            <label for="Subscribe">Subscribe for : </label>
+            <div class="subscribe1">
+              <input type="checkbox" name="subscribe1" />
+              <label for="subscribe1">1 year ($19.95)</label>
+            </div>
+            <div class="subscribe2">
+              <input type="checkbox" name="subscribe2" />
+              <label for="subscribe2">1 year ($35.00)</label>
+            </div>
+          </div>
+  
+          <div class="send-info">
+            <label for="send">Send me more information about : </label>
+            <div>
+              <input type="checkbox" name="computer" />
+              <label for="send1">Computer Zine</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Fishing" />
+              <label for="send2">Fishing Zine</label>
+            </div>
+            <div>
+              <input type="checkbox" name="cat-O-zine" />
+              <label for="send3">Cat-O-Zine</label>
+            </div>
+          </div>
+          
+        </form>
+      </section>
+      <hr>
+
+      <form class="default-form" action="">
+        <div>
+            <label for="fname">First Name : </label><input type="text" value="Prathipan" /> <br>
+        </div>
+        <div>
+            <label for="lname">Last Name : </label><input type="text" value="P"/> <br>
+        </div>
+        <div>
+            <label for="gender">Gender : </label> <input type="radio" name="gender" value="male" checked> male
+            <input type="radio" name="gender" value="female" > female
+            <input type="radio" name="gender" value="others" checked> others <br> 
+        </div>
+        <div>
+            <label for="DOB">DOB : </label><input type="date" value="1999-03-24">
+        </div>
+        <div>
+            <label for="education">Qualification : </label> <select name="college" size="1">
+                <option value="KLN">KLNCE</option>
+                <option value="SIT">SIT</option>
+                <option value="TCE">TCE</option>
+                <option value="NPC">NPC</option>
+                </select><br>
+        </div>
+        <div>
+            <label for="number">Mobile no. : </label> <input type="number" value="9874563210" /> <br>
+        </div>
+        <div>
+            <label for="mail">mail id : </label> <input type="email" name="mail" value="prathipan24p@gmail.com"> <br>
+        </div>
+        <div>
+            <label for="password">Password : </label> <input type="password" name="password" value="Passwords"> <br>
+        </div>
+        <div class="submit"> 
+            <input type="submit" value="submit">
+        </div>   
+         
+    </form>
+</body>
+</html> 
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+</head>
+<body>
+       guvi
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+</body>
+</html>
+-----------------------------------2-------------------------------------------------------- -->
+<!-- <html lang="en">
+    <head>
+        <title>Document </title>
+               
+    </head>
+    <body>
+        guvi
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+        </body>
+    </html> -->
+
+
+
+    
